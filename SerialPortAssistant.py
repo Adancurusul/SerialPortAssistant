@@ -45,6 +45,7 @@ QCoreApplication.setAttribute(Qt.AA_EnableHighDpiScaling)
 
 AUTHOR = "Adancurusul"
 VERSION = "V0.0.1"
+WEB = "https://github.com/Adancurusul/SerialPortAssistant"
 RECEIVECHECKTIME = 2
 ENCODING = "utf-8"#编码
 
@@ -59,7 +60,7 @@ class serialLogic(QtWidgets.QWidget, Ui_serialUI):
         self.openSerial_pushButton.setEnabled(True)
         self.closeSerial_pushButton.setEnabled(False)
         self.serial = serial.Serial()
-        self.setWindowTitle("串口助手  -- by "+AUTHOR+" -- "+VERSION)
+        self.setWindowTitle("串口助手  -- "+WEB)
         self.receiveTimer = QTimer(self)
         self.timerSendTimer = QTimer(self)
 
