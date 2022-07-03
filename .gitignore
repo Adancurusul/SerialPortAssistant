@@ -112,3 +112,6 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+.idea/misc.xml
+.idea/serialMonitor.iml
+.idea/vcs.xml
